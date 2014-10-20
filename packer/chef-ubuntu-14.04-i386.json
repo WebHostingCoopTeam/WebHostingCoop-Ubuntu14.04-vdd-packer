@@ -192,12 +192,9 @@
         "type": "chef-solo",
         "config_template": "chef/solo.rb",
         "cookbook_paths": [
-          "chef/cookbooks/berks",
-          "chef/cookbooks/core",
-          "chef/cookbooks/custom"
+          "vendor/cookbooks"
         ],
         "roles_path": "chef/roles",
-        "data_bags_path": "chef/data_bags",
         "run_list": ["php"],
         "prevent_sudo": false,
         "skip_install": false
